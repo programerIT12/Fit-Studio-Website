@@ -1,0 +1,96 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 375px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Ubuntu;
+  font-weight: 400;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  text-decoration: none;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+img {
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+a,
+button {
+  outline: none;
+}
+a:focus-visible,
+button:focus-visible,
+summery:focus-visible {
+  outline: 2px solid;
+  color: #3596ed;
+  outline-offset: 1px;
+}
+button:active {
+  background-color: #2f8ada;
+}
+
+.decor--left:before {
+  content: "";
+  position: absolute;
+  background: url("../content/Big-decor.svg") repeat-x;
+  width: calc(50% - 250px);
+  height: 48px;
+  z-index: -1;
+}
+.decor--right:after {
+  content: "";
+  position: absolute;
+  background: url("../content/Big-decor.svg") repeat-x;
+  width: calc(50% - 250px);
+  height: 48px;
+  z-index: -1;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .section {
+    margin-bottom: 80px;
+  }
+}

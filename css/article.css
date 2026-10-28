@@ -1,0 +1,133 @@
+.article {
+  padding-bottom: 120px;
+}
+
+.article__title {
+  max-width: 596px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+
+.article__text {
+  margin-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.article__large {
+  font-size: 48px;
+}
+.article__medium {
+  font-size: 36px;
+}
+.text--mb {
+  margin-bottom: 80px;
+}
+.article__wrapper {
+  position: relative;
+  margin-bottom: 80px;
+}
+.article__wrapper--left::before {
+  top: 100px;
+  left: 0;
+}
+
+.article__wrapper--right::after {
+  bottom: 136px;
+  right: 0;
+}
+
+.article__img {
+  width: 100%;
+}
+.article__list {
+  margin-top: 0px;
+  padding-left: 16px;
+  margin-bottom: 80px;
+}
+.article__item {
+  margin-top: 12px;
+}
+.article__item::marker {
+  margin-top: 12px;
+  color: #3596ed;
+  font-size: 22px;
+}
+.article__play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0px;
+  background-color: #3596ed;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.article__play:hover {
+  opacity: 1.1;
+  -webkit-box-shadow: 0 5px 15px #299bff;
+  box-shadow: 0 5px 15px #299bff;
+}
+
+.article__player {
+  width: 20px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .decor--left:before,
+  .decor--left::after {
+    display: none;
+  }
+  .article__text {
+    margin-bottom: 40px;
+  }
+  .article__medium {
+    font-size: 32px;
+  }
+  .article__large {
+    font-size: 44px;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    margin-bottom: 60px;
+  }
+  .article {
+    padding-bottom: 60px;
+  }
+  .article__large {
+    font-size: 42px;
+  }
+  .article__play {
+    width: 35px;
+    height: 35px;
+  }
+  .article__player {
+    width: 10px;
+    height: 12px;
+  }
+}
